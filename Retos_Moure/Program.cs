@@ -32,11 +32,14 @@ namespace Retos_Moure
             Console.WriteLine(tennisGame.printResult(P1WinnsFiveToThree));
             */
 
+            /*
+             * PrimeFibonacciEven
             var _numberToProof = new PrimeFibonacciAndEven();
             Console.WriteLine("Please enter a number to proof if it is prime or Fibonacci or pair (Must be a positive Number bigger than 0): ");
             var answer = Console.ReadLine();
             var result = _numberToProof.proof(Convert.ToInt32(answer));
             Console.WriteLine(result);
+            */
         }
     }
 }
