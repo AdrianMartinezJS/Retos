@@ -27,7 +27,7 @@ namespace Retos_Moure.UnitTests
         {
             var result = _hackerLanguage.transformStringToLeet("");
             
-            Assert.That(result,Is.EqualTo("Give a normal Text!"));
+            Assert.That(result,Is.EqualTo("Provide a normal Text!"));
         }
 
         [Test]
