@@ -24,8 +24,6 @@ namespace Retos_Moure
             */
 
             /* Tennis Game
-            var P1 = new Player();
-            var P2 = new Player();
             var tennisGame = new TennisMatch();
             var P1WinnsFiveToThree = new string[8] { "P1", "P1", "P2", "P2", "P1", "P2", "P1", "P1" };
 
@@ -39,6 +37,27 @@ namespace Retos_Moure
             var answer = Console.ReadLine();
             var result = _numberToProof.proof(Convert.ToInt32(answer));
             Console.WriteLine(result);
+            */
+
+            /* HogwartsHut
+            var hogwartsHut = new HogwartsHut();
+            var listOfAnswers = new List<string>();
+            var numberOfQuestions = 5;
+            for (int i = 0; i < numberOfQuestions; i++)
+            {
+                var questionAndPosibleAnswers = hogwartsHut.getQuestionAnswer(i);
+
+                Console.WriteLine(questionAndPosibleAnswers[0]);
+                Console.WriteLine("You have the following posibilities: (Just enter the number of your answer)");
+                Console.WriteLine("1: {0}", questionAndPosibleAnswers[1]);
+                Console.WriteLine("2: {0}", questionAndPosibleAnswers[2]);
+                Console.WriteLine("3: {0}", questionAndPosibleAnswers[3]);
+                Console.WriteLine("4: {0}", questionAndPosibleAnswers[4]);
+                var answer = Console.ReadLine();
+                if (!String.IsNullOrEmpty(answer))
+                    listOfAnswers.Add(answer);
+            }
+            Console.WriteLine( hogwartsHut.selectProperHouse(listOfAnswers) );
             */
         }
     }
